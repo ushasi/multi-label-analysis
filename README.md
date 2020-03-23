@@ -31,3 +31,8 @@ The various useful files and their details are:
 </ol>
 
 The new_dataset.mat and features.mat files can be downloaded from this <a href="https://www.dropbox.com/sh/k9ugragg6fbej6n/AAD6g6lhZm4243g0plTKaPJza?dl=0&m="> Dropbox </a> link. 
+
+
+<li><b>If you find this code useful, please cite the following paper: </b> </li>
+
+<li>Nagma Khan, Ushasi Chaudhuri, Biplab Banerjee, Subhasis Chaudhuri,<a href="https://www.sciencedirect.com/science/article/pii/S0925231219306861/">Graph Convolutional Network for Multi-label VHR Remote Sensing Scene Recognition</a>, Neurocomputing, 357, 36-46. </li>
