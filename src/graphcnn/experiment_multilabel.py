@@ -59,7 +59,7 @@ class GraphCNNExperiment(object):
         tf.reset_default_graph()
         self.config = tf.ConfigProto()
         #self.config.gpu_options.allocator_type = 'BFC'
-         os.environ["CUDA_VISIBLE_DEVICES"] = '0’ # assigned gpu
+        os.environ["CUDA_VISIBLE_DEVICES"] = '0’ # assigned gpu
         self.config.gpu_options.per_process_gpu_memory_fraction = 0.2 # fraction of gpu
        
 
@@ -533,9 +533,9 @@ class GraphCNNExperiment(object):
                     latest2 = tf.train.latest_checkpoint(snapshot_path_latest2)
                     
 
-                    saver.restore(sess, latest2)
-                    cur_i = int(latest2[len(snapshot_path_latest2 + 'model-'):])
-                    print_ext('Restoring last models default checkpoint at %d' % cur_i)
+                    #saver.restore(sess, latest2)   REMOVE COMMENTS WHEN YOU WANT TO RESTORE MODEL
+                    #cur_i = int(latest2[len(snapshot_path_latest2 + 'model-'):])
+                    #print_ext('Restoring last models default checkpoint at %d' % cur_i)
                                 
                     self.print_ext('Starting summaries')
                     if not os.path.exists(self.train_summary_path):
