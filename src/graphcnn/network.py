@@ -136,7 +136,7 @@ class GraphCNNNetwork(object):
             if with_act_func:
                 self.current_V = tf.nn.relu(self.current_V)
         print_ext("Shape of V at output:",self.current_V.get_shape())
-        if no_filters == 512: #earlier 256
+        if no_filters == 256: #earlier 512
             self.fc_features = self.current_V
         return self.current_V
         
